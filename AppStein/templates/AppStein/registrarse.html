@@ -1,0 +1,19 @@
+{% extends 'AppStein/base.html' %}
+
+{% load static %}
+
+{% block title %} REGISTRARSE {% endblock title  %}
+
+{% block main %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <p>Nombre: <input type="text" name="nombre"></p>
+    <p>Apellido: <input type="text" name="apellido"></p>
+    <p>Email: <input type="text" name="email"></p>
+    <p>DNI: <input type="text" name="dni"></p>
+    <input type="submit" value="Enviar"> 
+</form>
+
+
+{% endblock main %}

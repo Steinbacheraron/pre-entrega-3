@@ -1,0 +1,14 @@
+{% extends 'AppStein/base.html' %}
+
+{% load static %}
+
+{% block title %} {% endblock title  %}
+
+
+{% for buscar_alumno in BuscaAlumnoForm  %}
+{% block main %}
+    {% for alumno in Alumno %}
+        <p>Alumno: {{ alumno.nombre }}</p>
+        <p>Apellido: {{ alumno.apellido }}</p>
+    {% endfor %}
+{% endblock %}

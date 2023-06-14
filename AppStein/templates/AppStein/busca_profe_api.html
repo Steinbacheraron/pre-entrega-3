@@ -1,0 +1,14 @@
+{% extends 'AppStein/base.html' %}
+
+{% load static %}
+
+{% block title %} BUSCAR PROFESOR {% endblock title  %}
+
+{% block main %}
+
+{% for profesor in profesores %}
+    <p> Profesor: {{ profesor.nombre }} </p>
+    <p> Apellido: {{ profesor.apellido }} </p>
+{% endfor %}
+
+{% endblock main %}

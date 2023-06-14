@@ -1,0 +1,16 @@
+{% extends 'AppStein/base.html' %}
+
+{% load static %}
+
+{% block title %} BUSCAR ALUMNO {% endblock title  %}
+
+{% block main %}
+    <form action="/AppStein/" method="post">
+        {% for busca_alumno in BuscaAlumnoForm %}
+            <p>Nombre: <input type="text" name="nombre"></p>
+            <p>Apellido: <input type="text" name="apellido"></p>
+            <input type="submit" value="Buscar Alumno">
+        {% endfor %}
+    </form>
+{% endblock main %}
+
